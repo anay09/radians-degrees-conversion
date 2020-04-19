@@ -15,17 +15,20 @@ print('    - A - Convert from Radians to Degrees')
 print('    - B - Convert from Degrees to Radians')
 print('    - X - Exit\n\n')
 option = input("Choose the function : ")
-if option == 'A':
-    print('You have chosen to convert from radians to degrees...\n')
-    radians = int(input('Enter the value to be converted into degrees : '))
-    print('\n')
-    print(convert_radians_to_degrees(radians))
-elif option == 'B':
-    print('You have chosen to convert from degrees to radians...\n')
-    degrees = int(input('Enter the value to be converted into radians : '))
-    print('\n')
-    print(convert_degrees_to_radians(degrees))
-elif option == 'X':
-    print('Thank you for using our application!!!')
-else:
-    print('Invalid Character!!!')
+while True:
+    if option == 'A':
+        print('You have chosen to convert from radians to degrees...\n')
+        radians = int(input('Enter the value to be converted into degrees : '))
+        print('\n')
+        print(convert_radians_to_degrees(radians))
+    elif option == 'B':
+        print('You have chosen to convert from degrees to radians...\n')
+        degrees = int(input('Enter the value to be converted into radians : '))
+        print('\n')
+        print(convert_degrees_to_radians(degrees))
+    elif option == 'X':
+        print('Thank you for using our application!!!')
+        break
+    else:
+        print('\nInvalid Character!!!')
+    option = input("\nChoose another function : ")
