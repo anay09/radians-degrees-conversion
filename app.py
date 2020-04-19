@@ -22,6 +22,10 @@ if option == 'A':
     print(convert_radians_to_degrees(radians))
 elif option == 'B':
     print('You have chosen to convert from degrees to radians...\n')
-    degrees = int(input('Enter the value to be converted into radians'))
+    degrees = int(input('Enter the value to be converted into radians : '))
     print('\n')
     print(convert_degrees_to_radians(degrees))
+elif option == 'X':
+    print('Thank you for using our application!!!')
+else:
+    print('Invalid Character!!!')
